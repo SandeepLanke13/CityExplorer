@@ -48,3 +48,5 @@ Entities: User, Place, Review, Event, Category
 Schema includes foreign keys and relations
 
 Sample seed data optional
+
+Made by Sandeep Lanke
