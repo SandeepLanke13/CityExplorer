@@ -1,0 +1,29 @@
+:root { --bg:#0f1523; --panel:#131b2f; --card:#1a2340; --text:#e6ecff; --muted:#9ab; --accent:#7aa2ff; }
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin:0; font-family: ui-sans-serif, system-ui, Arial; background: var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1200px; margin:0 auto; padding:1rem; }
+.header { display:flex; align-items:center; justify-content:space-between; background: var(--panel); padding:.8rem 1rem; border-radius:14px; position: sticky; top:.5rem; }
+.brand { font-weight:800; letter-spacing:.4px; }
+.nav { display:flex; gap:.6rem; align-items:center; flex-wrap: wrap; }
+.nav a { padding:.35rem .6rem; border-radius:8px; }
+.nav a.active { background:#0d1426; }
+.nav .ghost { background: transparent; color: var(--text); border:1px solid #2a355a; padding:.45rem .8rem; border-radius:10px; cursor:pointer; }
+.hero { margin:1rem 0; background: linear-gradient(180deg, #1a2340, #131b2f); border:1px solid #2a355a; border-radius:16px; padding:1rem; }
+.grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:1rem; }
+.tile { background: var(--card); border:1px solid #2a355a; padding:1rem; border-radius:16px; transition: transform .12s ease, border-color .12s; }
+.tile:hover { transform: translateY(-2px); border-color:#3a4a7a; text-decoration:none; }
+.panel { background: var(--panel); border:1px solid #2a355a; border-radius:16px; padding:1rem; }
+.mt { margin-top: 1rem; }
+.narrow { max-width: 720px; margin: 0 auto; }
+.screen { min-height: 100%; display:grid; place-items:center; padding:2rem; }
+.card { background: var(--card); padding:2rem; border-radius:16px; width:100%; max-width:420px; box-shadow: 0 10px 30px rgba(0,0,0,.3); display:flex; flex-direction:column; gap:.75rem; }
+.card input { padding:.75rem 1rem; border-radius:10px; border:1px solid #2a355a; background:#0e1528; color: var(--text); outline:none; }
+.card button { margin-top:.5rem; padding:.8rem 1rem; border:none; border-radius:12px; background: var(--accent); color:#0b1020; font-weight:700; cursor:pointer; }
+.error { color:#ff8aa0; }
+.map { height:100%; width:100%; border:1px solid #2a355a; border-radius:12px; overflow:hidden; }
+.filters { display:flex; gap:.5rem; flex-wrap:wrap; }
+.filters input, .filters select { padding:.6rem .8rem; border-radius:10px; border:1px solid #2a355a; background:#0e1528; color: var(--text); }
+.filters button { padding:.6rem .8rem; border-radius:10px; border:none; background: var(--accent); color:#0b1020; font-weight:700; }
